@@ -1,13 +1,10 @@
 {
     "version": 2,
+    "name": "new-nextfitness-backend",
     "builds": [
-    {
-        "src": "./app.js",
-        "use": "@vercel/node"
-    }],
+        { "src": "app.js", "use": "@vercel/node" }
+    ],
     "routes": [
-    {
-        "src": "/(.*)",
-        "dest": "/"
-    }]
+        { "src": "/(.*)", "dest": "/app.js" }
+    ]
 }
