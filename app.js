@@ -19,6 +19,7 @@ app.use(recipeRouter)
 
 app.use(exerciseRouter)
 
+
 app.use((req, res, next) => {
     res.status(404).send({message: "pageNotFound"});
 });

@@ -6,4 +6,5 @@ const config = require('./config')
 const app = initializeApp(config.firebaseConfig)
 const db = getFirestore(app)
 
+
 module.exports = db
