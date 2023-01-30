@@ -21,7 +21,7 @@ app.use(exerciseRouter)
 
 
 app.use((req, res, next) => {
-    res.status(404).send({message: "pageNotFound"});
+    res.status(404).send({message: "pageNotFound default page of home"});
 });
 
 
